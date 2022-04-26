@@ -1,0 +1,42 @@
+<div class="page-body">
+	<div class="row">
+
+		<div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12 fade-in-1">
+			<h2 class="blur glitch">CONTACT US</h2>
+			<p>Prometheus Information Systems Corp. makes an effort to be highly communicative and welcoming to everyone who wants to talk to us. Whether they are new clients, potential partners, followers, or just curious minds, we read every message that comes through and love to talk.</p>
+
+			<div class="text-center">
+				General contact email: <br/><span id="contact-email" class="email-address"></span><br/><br/>
+				Support email: <br/><span id="support-email" class="email-address"></span><br/>
+			</div>
+
+			<br/><br/>
+			<p>Also, be sure to follow us on social media and join our chat using the links in the footer!</p>
+
+		</div>
+
+		<div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12 fade-in-2">
+			<h3 class="glitch">SEND US A MESSAGE!</h3>
+			<form (ngSubmit)="processForm()">
+
+			  <!-- name -->
+			  <div class="field">
+			    <input type="text" name="name" class="input" placeholder="Name" [(ngModel)]="name">
+			  </div>
+
+			  <!-- email -->
+			  <div class="field">
+			    <input type="email" name="email" class="input" placeholder="Email" [(ngModel)]="email">
+			  </div>
+
+			  <!-- message -->
+			  <div class="field">
+			    <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message"></textarea>
+			  </div>
+
+			  <button type="submit" class="button is-danger is-large">Submit</button>
+
+			</form>
+		</div>
+	</div>
+</div>

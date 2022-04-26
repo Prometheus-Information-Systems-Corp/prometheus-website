@@ -30,10 +30,12 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.sass"
+            "styles": [         
+              "./src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/particles.js/particles.js"
+            ]
           },
           "configurations": {
             "production": {
